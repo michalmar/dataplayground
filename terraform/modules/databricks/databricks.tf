@@ -5,6 +5,7 @@ resource "azurerm_databricks_workspace" "main" {
   location            = var.location
   sku                 = "trial"
   managed_resource_group_name = "data-demo-databricks-solution-dbxinfra"
+  storage_account_sku_name = "Premium_LRS"
 }
 
 
